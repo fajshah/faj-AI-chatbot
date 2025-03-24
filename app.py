@@ -28,6 +28,18 @@ st.markdown(
     unsafe_allow_html=True
 )
 
+# Display available questions at the top
+st.subheader("🤔 You can ask me:")
+st.write("- Hello / Hi")
+st.write("- What's your name?")
+st.write("- Who created you?")
+st.write("- Tell me a joke")
+st.write("- Goodbye")
+st.write("- How are you?")
+st.write("- What can you do?")
+st.write("- Where are you from?")
+st.write("- What is your purpose?")
+
 # Predefined responses
 responses = {
     "hello": ["Hi there! How can I help you?", "Hello! Hope you're having a great day! 😊"],
@@ -37,7 +49,11 @@ responses = {
     "tell me a joke": ["Why don’t scientists trust atoms? Because they make up everything! 😂", 
                         "Why did the scarecrow win an award? Because he was outstanding in his field! 🌾😆", 
                         "استاد: بچوں سب سے زیادہ تیز چیز کیا ہے؟\nطالب علم: دعا\nاستاد: وہ کیسے؟\nطالب علم: دعا مانگتے ہی امی کے ہاتھ کی چپل آ جاتی ہے! 😂"],
-    "goodbye": ["Bye! Have a great day! 😊", "Goodbye! See you next time! 👋"]
+    "goodbye": ["Bye! Have a great day! 😊", "Goodbye! See you next time! 👋"],
+    "how are you": ["I'm just a bot, but I'm doing great! How about you? 😊"],
+    "what can you do": ["I can chat with you, tell jokes, remember your inputs, and learn new responses! 🤖"],
+    "where are you from": ["I live in the cloud! ☁️"],
+    "what is your purpose": ["My purpose is to assist and entertain you! 😊"]
 }
 
 # User-defined responses (learned responses)
